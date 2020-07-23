@@ -34,7 +34,7 @@ public class UserController {
 			@RequestParam(value="sort", defaultValue="desc") String sort) 
 	
 	{
-//		if(sort==null) sort="desc"; 
+//		if(sort==null) sort="desc"; //this can be change via defuaultValue
 		return "GET user method is called with page and limit: "+page +" and " +limit +" and sort: "+sort;
 	}
 	
