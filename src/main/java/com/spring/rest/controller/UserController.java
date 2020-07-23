@@ -34,7 +34,7 @@ public class UserController {
 			@RequestParam(value="sort", defaultValue="desc") String sort) 
 	
 	{
-//		if(sort==null) sort="desc"; //this can be change via defuaultValue
+//		if(sort==null) sort="desc"; //this can eliminated by simply using defaultValue
 		return "GET user method is called with page and limit: "+page +" and " +limit +" and sort: "+sort;
 	}
 	
@@ -51,7 +51,7 @@ public class UserController {
 	}
 	
 	@DeleteMapping
-	public String deletUser() {
+	public String deleteUser() {
 		return "DELETE user method is called";
 	}
 	
